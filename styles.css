@@ -1,0 +1,151 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --Green500: hsl(158, 36%, 37%);
+    --Green700: hsl(158, 42%, 18%);
+
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 100;
+    font-size: 2.2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.discount-price {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--Green500);
+    flex-basis: 50%;
+}
+
+.original-price {
+    text-decoration-line: line-through;
+    flex-basis: 50%;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tags,
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--Grey);
+    margin: 0;
+}
+
+body {
+    /*font-size: clamp(1rem, 0.8rem + 1vw, 1.6rem);*/
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    height: 100vh;
+    background-color: var(--Cream);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem;
+    margin-top: 6vh;
+    background-color: var(--White);
+    border-radius: 0.4rem;
+    overflow: clip;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 750px;
+}
+
+header {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 35%;
+    background-color: red;
+    max-height: 360px;
+    display: flex;
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+.product-img {
+    /*
+    width: 100%;
+    height: 100%;
+    */
+    flex-basis: 1;
+    max-height: 360px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 65%;
+}
+
+.pricing{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.add-cart{
+    display: flex;
+    height: 3rem;
+    background-color: var(--Green500);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart:hover{
+    background-color: var(--Green700);
+    cursor: pointer;
+}
+
+.cart-img{
+    flex-basis: 12%;
+    height: 18px;
+}
+
+.text-cart{
+    flex-basis: 40%;
+    color: var(--White);
+}
+
+@media (min-width: 24rem) {
+    p {
+        color: blue;
+    }
+    h1 {
+        color: red;
+    }
+}
